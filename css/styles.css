@@ -37,6 +37,7 @@ header {
     background-color: rgba(15, 38, 49, 0.95);
     position: fixed;
     left: calc(50% - 500px);
+    bottom: calc(100% - 60px);
     border-radius: 0 0 20px 20px;
     z-index: 3;
 }
@@ -59,11 +60,11 @@ header .wrapper {
     margin-right: auto;
 }
 
-img {
+.contenu img {
     max-width: 100%;
 }
 
-ul {
+.contenu ul {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 45px;
@@ -71,7 +72,7 @@ ul {
    padding: 0;
 }
 
-li {
+.contenu li {
     background-color: rgb(15, 38, 49);
     padding: 20px;
     border-radius: 10px;
@@ -87,5 +88,87 @@ li {
     border-radius: 0 0 0 5px;
     left: calc(100% - 45px);
     z-index: 2;
+    cursor: pointer;
 }
+
+/* === ÉTAPE 8 === */
+
+footer {
+    background-color: rgba(15, 38, 49, 0.95);
+    border-radius: 15px 15px 0 0;
+    width: 1000px;
+    position: fixed;
+    left: calc(50% - 500px);
+    top: calc(100% - 50px);
+    z-index: 3;
+}
+
+footer .wrapper {
+    size: 5rem;
+}
+
+footer .wrapper p {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* === ÉTAPE 9 === */
+
+.media {
+    background-color: rgb(15, 38, 49);
+    border-radius: 0 15px 15px 0;
+    position: fixed;
+    top: 200px;
+    left: 0px;
+    z-index: 4;
+}
+
+.media img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+}
+
+.media img:hover {
+    left: 3px;
+}
+
+.media ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* === ÉTAPE 10 === */
+
+img.zoom {
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    cursor: pointer;
+}
+
+div.modale {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+div.visible {
+    display: flex;
+}
+
+/* === ÉTAPE 11 === */
 
